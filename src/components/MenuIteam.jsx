@@ -13,7 +13,7 @@ const MenuIteam = ({data,isActive}) => {
                         {data.title}
                     </div>
                     {
-                        isActive != 'active'
+                        isActive !== 'active'
                         &&
                         <div className="drowable">
                             {">"}
