@@ -79,3 +79,23 @@ a{
         margin-bottom: 0px;
     }
 /* ==========X=== SideBar ===X========== */
+
+/* ============== Dashboard Layout ============= */
+    .layout_main .dashboard_main_layout{
+        background-color: var(--card_background_color);
+        padding: 20px 30px;
+    }
+    .layout_main .dashboard_main_layout .searchBox{
+        display: flex;
+        align-items: center;
+    }
+    .layout_main .dashboard_main_layout .searchBox i{
+        color: var(--heading_small_color);
+        padding: 0px 5px;
+    }
+    .layout_main .dashboard_main_layout .searchBox input{
+        border: none;
+        padding: 0px 5px;
+        color: var(--heading_small_color);
+    }
+/* ==========X==== Dashboard Layout ====X========= */
