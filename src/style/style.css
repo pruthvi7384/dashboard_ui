@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --sidebar_background_color:#040440;
+    --body_background_color:#f5f6f8;
+    --title_white:#d2d3dd;
+    --navigation_active_background:#2d2d69;
+    --nvigation_active_color:#dcdce5;
+    --navigation_color:#5a5d87;
+    --title_dashboard:#202121;
+    --heading_color:#020202;
+    --heading_small_color:#cacaca;
+    --card_background_color:#ffffff;
+}
+a{
+    text-decoration: none;
+}
+/* ============== SideBar ============== */
+    .layout_main .sidebar_layout .sidebar_title{
+        margin-bottom: 40px;
+    }
+    .layout_main .sidebar_layout .sidebar_title h1{
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--title_white);
+    }
+    .layout_main .sidebar_layout{
+        background-color: var(--sidebar_background_color);
+        height: 100vh;
+        padding: 20px;
+    }
+    .layout_main .sidebar_layout .iteam_row{
+        color: var(--navigation_color);
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        padding: 10px;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    .layout_main .sidebar_layout .iteam_row .title{
+        padding: 0px 20px;
+        flex: 0.90;
+    }
+    .layout_main .sidebar_layout .active{
+        background-color: var(--navigation_active_background);
+        border-radius: 5px;
+    }
+    .layout_main .sidebar_layout .profile_layout{
+        display: flex;
+        align-items: center;
+        background-color: var(--navigation_active_background);
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 50px;
+    }
+    .layout_main .sidebar_layout .profile_layout img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .layout_main .sidebar_layout .profile_layout .profile_content{
+        padding: 0px 10px;
+    }
+    .layout_main .sidebar_layout .profile_layout .profile_content h2{
+        font-size: 18px;
+        color: var(--title_white);
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .layout_main .sidebar_layout .profile_layout .profile_content p{
+        font-size: 16px;
+        color: var(--heading_small_color);
+        margin-bottom: 0px;
+    }
+/* ==========X=== SideBar ===X========== */

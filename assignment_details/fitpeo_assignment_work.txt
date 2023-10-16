@@ -1,0 +1,8 @@
+** React Assignment - Design Dashboard UI **
+
+* Dependancies :
+	- react-router-dom
+	- react-boostrap
+	- fontAwsome
+	- chart.js
+	
