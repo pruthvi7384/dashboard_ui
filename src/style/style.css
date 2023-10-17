@@ -11,10 +11,25 @@
     --navigation_active_background:#2d2d69;
     --nvigation_active_color:#dcdce5;
     --navigation_color:#5a5d87;
-    --title_dashboard:#202121;
-    --heading_color:#020202;
-    --heading_small_color:#cacaca;
+    --title_dashboard:#050505;
+    --heading_color:#101010;
+    --heading_small_color:#cdcdcd;
     --card_background_color:#ffffff;
+    --background_color:#f1f5f8;
+    --card1_icon_background_color:#ddffec;
+    --card2_icon_background_color:#e7dbff;
+    --card3_icon_background_color:#ccf2ff;
+    --card4_icon_background_color:#ffbde1;
+    --card1_icon_color:#00a746;
+    --card2_icon_color:#a200ff;
+    --card3_icon_color:#0557bf;
+    --card4_icon_color:#d80014;
+    --card_heading_color:#444444;
+    --card_small_heading_color:#cecece;
+
+}
+body{
+    background-color: var(--background_color);
 }
 a{
     text-decoration: none;
@@ -34,6 +49,7 @@ a{
         padding: 20px;
     }
     .layout_main .sidebar_layout .iteam_row{
+        width: 100%;
         color: var(--navigation_color);
         font-size: 16px;
         font-weight: bold;
@@ -49,15 +65,17 @@ a{
     .layout_main .sidebar_layout .active{
         background-color: var(--navigation_active_background);
         border-radius: 5px;
+        color: var(--nvigation_active_color);
     }
     .layout_main .sidebar_layout .profile_layout{
+        width: 100%;
         display: flex;
         align-items: center;
         background-color: var(--navigation_active_background);
         padding: 10px;
         border-radius: 5px;
-        position: absolute;
-        bottom: 50px;
+        position: relative;
+        bottom: -200px;
     }
     .layout_main .sidebar_layout .profile_layout img{
         width: 50px;
@@ -82,20 +100,72 @@ a{
 
 /* ============== Dashboard Layout ============= */
     .layout_main .dashboard_main_layout{
-        background-color: var(--card_background_color);
-        padding: 20px 30px;
+        padding: 20px 40px;
     }
     .layout_main .dashboard_main_layout .searchBox{
         display: flex;
         align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: var(--card_background_color);
+        border-radius: 5px;
+    }
+    .layout_main .dashboard_main_layout .dashboard_top{
+        justify-content: space-between;
+        align-items: center;
     }
     .layout_main .dashboard_main_layout .searchBox i{
         color: var(--heading_small_color);
-        padding: 0px 5px;
+        padding: 0px 5px 0px 10px;
     }
     .layout_main .dashboard_main_layout .searchBox input{
         border: none;
         padding: 0px 5px;
         color: var(--heading_small_color);
+        line-height: 2;
     }
+    .layout_main .dashboard_main_layout .searchBox input::placeholder{
+        color: var(--heading_small_color);
+    }
+    .layout_main .dashboard_main_layout .searchBox input:focus{
+       outline: none;
+    }
+    .layout_main .dashboard_main_layout .dashboard_top h1{
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--title_dashboard);
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization{
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: var(--card_background_color);
+        padding: 20px;
+        border-radius: 5px;
+        margin: 10px
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .card_icon{
+        font-size: 50px;
+        padding: 20px 45px;
+        border-radius: 50%;
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data h2{
+        font-size: 20px;
+        color: var(--card_small_heading_color);
+        font-weight: bold;
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data h1{
+        font-size: 35px;
+        color: var(--card_heading_color);
+        font-weight: bold;
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data p{
+       color: var(--card_heading_color);
+       font-weight: 500;
+    }
+
 /* ==========X==== Dashboard Layout ====X========= */

@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import MenuIteam from "./MenuIteam";
-import navigationMenu from "../serverData/data";
+import {navigationMenu} from "../serverData/data";
 import { useLocation } from "react-router-dom";
 import profile from "../assets/profile.jpg"
 

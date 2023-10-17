@@ -37,4 +37,61 @@ const navigationMenu = [
     }
 ];
 
-export default navigationMenu;
+const dashboardVisulization = [
+    {
+        id:1,
+        title:"Earning",
+        icon:<i className="fa fa-usd" aria-hidden="true"></i>,
+        icon_color:"#00a746",
+        icon_background:"#ddffec",
+        data:"198",
+        monthData:"37.8%"
+    },
+    {
+        id:2,
+        title:"Orders",
+        icon:<i className="fa fa-file-text-o" aria-hidden="true"></i>,
+        icon_color:"#a200ff",
+        icon_background:"#e7dbff",
+        data:"2.4",
+        monthData:"2%"
+    },
+    {
+        id:3,
+        title:"Balence",
+        icon:<i className="fa fa-balance-scale" aria-hidden="true"></i>,
+        icon_color:"#0557bf",
+        icon_background:"#ccf2ff",
+        data:"2.4",
+        monthData:"2%"
+    },
+    {
+        id:4,
+        title:"Total Sales",
+        icon:<i className="fa fa-shopping-bag" aria-hidden="true"></i>,
+        icon_color:"#d80014",
+        icon_background:"#ffbde1",
+        data:"89",
+        monthData:"11%"
+    },
+    {
+        id:5,
+        title:"Earning",
+        icon:<i className="fa fa-usd" aria-hidden="true"></i>,
+        icon_color:"#00a746",
+        icon_background:"#ddffec",
+        data:"198",
+        monthData:"37.8%"
+    },
+    {
+        id:6,
+        title:"Orders",
+        icon:<i className="fa fa-usd" aria-hidden="true"></i>,
+        icon_color:"#a200ff",
+        icon_background:"#e7dbff",
+        data:"2.4",
+        monthData:"2%"
+    },
+]
+
+export {navigationMenu, dashboardVisulization}
