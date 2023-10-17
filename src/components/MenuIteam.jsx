@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MenuIteam = ({data,isActive}) => {
     return(
         <>
-            <Link to={data.href}>
+            <Link to={data.href} key={data.id}>
                 <div className={`iteam_row ${isActive}`}>
                     <div className="icon">
                         {data.icon}

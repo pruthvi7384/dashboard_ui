@@ -31,7 +31,7 @@ const navigationMenu = [
     },
     {
         id:6,
-        icon:<i class="fa fa-comments-o" aria-hidden="true"></i>,
+        icon:<i className="fa fa-comments-o" aria-hidden="true"></i>,
         title:"Help",
         href:""
     }
@@ -86,7 +86,7 @@ const dashboardVisulization = [
     {
         id:6,
         title:"Orders",
-        icon:<i className="fa fa-usd" aria-hidden="true"></i>,
+        icon:<i className="fa fa-file-text-o" aria-hidden="true"></i>,
         icon_color:"#a200ff",
         icon_background:"#e7dbff",
         data:"2.4",
@@ -94,4 +94,28 @@ const dashboardVisulization = [
     },
 ]
 
-export {navigationMenu, dashboardVisulization}
+const barGraph = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    datasets: [
+      {
+        data: [10, 12, 14, 9, 8, 10,12,16,15,14,10,12],
+        backgroundColor: [
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(90,50,234,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)',
+            'rgba(242,239,255,255)'
+          ],
+      },
+    ],
+
+  }
+
+export {navigationMenu, dashboardVisulization, barGraph}

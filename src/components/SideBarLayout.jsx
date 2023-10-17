@@ -17,7 +17,7 @@ const SideBarLayout = ({col}) =>{
                 </Row>
                 {
                     navigationMenu.map((data)=>(
-                            <MenuIteam isActive = {location.pathname === data.href ? 'active' : ''} data={data}/>
+                            <MenuIteam key={data.id} isActive = {location.pathname === data.href ? 'active' : ''} data={data}/>
                     ))
                 }
                 <div className="profile_layout">

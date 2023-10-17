@@ -1,7 +1,7 @@
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import TopBar from "../../components/TopBar";
-import VisulizationCard from "../../components/VisulizationCard";
-import { dashboardVisulization } from "../../serverData/data";
+import DashboardData from "./DashboardData";
+import GraphDashboard from "./GraphDashboard";
 
 
 /**
@@ -12,13 +12,8 @@ const DashboardMainLayout = ({col}) =>{
         <>
             <Col xl={col} className="dashboard_main_layout">
                 <TopBar/>
-                <Row className="dashboard_card_visulization">
-                    {
-                        dashboardVisulization.map((data)=>(
-                            <VisulizationCard col={3} data={data}/>
-                        ))
-                    }
-                </Row>
+                <DashboardData/>
+                <GraphDashboard/>
             </Col>
         </>
     )

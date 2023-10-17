@@ -35,6 +35,9 @@ a{
     text-decoration: none;
 }
 /* ============== SideBar ============== */
+    .layout_main .sidebar_layout{
+        position: fixed;
+    }
     .layout_main .sidebar_layout .sidebar_title{
         margin-bottom: 40px;
     }
@@ -101,6 +104,7 @@ a{
 /* ============== Dashboard Layout ============= */
     .layout_main .dashboard_main_layout{
         padding: 20px 40px;
+        margin-left: 16.66666667%;;
     }
     .layout_main .dashboard_main_layout .searchBox{
         display: flex;
@@ -146,12 +150,16 @@ a{
         background-color: var(--card_background_color);
         padding: 20px;
         border-radius: 5px;
-        margin: 10px
+        margin: 10px;
+        cursor: pointer;
     }
     .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .card_icon{
-        font-size: 50px;
-        padding: 20px 45px;
+        font-size: 35px;
+        padding: 20px 35px;
         border-radius: 50%;
+    }
+    .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data{
+        padding-left: 10px;
     }
     .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data h2{
         font-size: 20px;
@@ -167,5 +175,34 @@ a{
        color: var(--card_heading_color);
        font-weight: 500;
     }
-
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization{
+        margin-top: 20px;
+    }
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar, .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_pie{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: var(--card_background_color);
+        padding: 20px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar .heading .heading_graph h2, .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_pie .heading h2{
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--heading_color);
+    }
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar .heading .heading_graph p, .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_pie .heading p{
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--heading_small_color);
+    }
+    .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar .heading .filter h2{
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--heading_small_color);
+    }
 /* ==========X==== Dashboard Layout ====X========= */
