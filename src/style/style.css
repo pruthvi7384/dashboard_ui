@@ -36,15 +36,27 @@ a{
 }
 /* ============== SideBar ============== */
     .layout_main .navigation_menu{
-        color: var(--heading_small_color);
+        color: var(--heading_color);
         font-size: 25px;
         font-weight: bold;
         padding: 20px;
+        display: none;
+        cursor: pointer;
+    }
+    .navigation_close{
+        text-align: right;
+        color: var(--navigation_active_background);
+        font-size: 25px;
+        cursor: pointer;
         display: none;
     }
     .layout_main .sidebar_layout{
         position: fixed;
         height: 100vh;
+        overflow-y: scroll;
+    }
+    .layout_main .sidebar_layout::-webkit-scrollbar{
+        display: none;
     }
     .layout_main .sidebar_layout .sidebar_title{
         margin-bottom: 40px;
@@ -220,3 +232,44 @@ a{
         height: 100%;
     }
 /* ==========X==== Dashboard Layout ====X========= */
+
+/* =============== Responsivenes ============== */
+    @media screen and (max-width: 1024px) {
+        .layout_main .navigation_menu,.layout_main .navigation_close{
+            display: block;
+        }
+        .layout_main .sidebar_layout{
+            display: none;
+        }
+        .layout_main .dashboard_main_layout{
+            padding: 20px 40px;
+            margin-left: 0;
+        }
+        .row>* {
+            flex-shrink:1;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .layout_main .sidebar_layout .profile_layout{
+            bottom: -50px;
+        }
+    }
+    @media screen and (max-width: 475px) {
+        .layout_main .dashboard_main_layout{
+            padding: 20px;
+        }
+        .layout_main .dashboard_main_layout .dashbord_graph_visulization .graph_bar .heading{
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization{
+            flex-direction: column;
+            text-align: center;
+        }
+        .layout_main .dashboard_main_layout .dashboard_card_visulization .card_data_visulization .informaction_data{
+            margin-top: 10px;
+        }
+
+    }
+/* ===========X==== Responsivenes ====X========== */

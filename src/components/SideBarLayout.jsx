@@ -7,11 +7,16 @@ import profile from "../assets/profile.jpg"
 /**
  * SideBar Layout Components
  */
-const SideBarLayout = ({col}) =>{
+const SideBarLayout = ({isopen,setOpen,col}) =>{
     const location = useLocation();
     return(
         <>
-            <Col xl={col} className="sidebar_layout">
+            <Col xl={col} style={{display: isopen ? 'block' : ''}} className="sidebar_layout">
+                <Row className="navigation_close" onClick={()=>{
+                    setOpen(false)
+                }}>
+                     <i className="fa fa-times" aria-hidden="true"></i>
+                </Row>
                 <Row className="sidebar_title">
                     <h1><span><i className="fa fa-dashcube" aria-hidden="true"></i></span> Dashboard</h1>
                 </Row>
@@ -23,8 +28,8 @@ const SideBarLayout = ({col}) =>{
                 <div className="profile_layout">
                     <img src={profile} alt="" />
                     <div className="profile_content">
-                        <h2>Evnao</h2>
-                        <p>Project Manager</p>
+                        <h2>Pruthvi</h2>
+                        <p>Software Developer</p>
                     </div>
                 </div>
             </Col>
