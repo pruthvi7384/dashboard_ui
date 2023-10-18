@@ -118,4 +118,18 @@ const barGraph = {
 
   }
 
-export {navigationMenu, dashboardVisulization, barGraph}
+  const pieGraph = {
+    datasets: [
+      {
+        data: [15,25,60],
+        backgroundColor: [
+            'rgba(241,239,252,255)',
+            'rgba(244,56,153,255)',
+            'rgba(100,60,234,255)'
+          ],
+      },
+    ],
+
+  }
+
+export {navigationMenu, dashboardVisulization, barGraph, pieGraph}

@@ -5,8 +5,8 @@ import PieChart from "../../components/PieChart";
 const BarGraphDashboard = () => {
     return(
         <Row className="dashbord_graph_visulization">
-            <BarGraph col = {8}/>
-            <PieChart xl = {4}/>
+            <BarGraph col = {7}/>
+            <PieChart col = {4}/>
         </Row>
     )
 }
